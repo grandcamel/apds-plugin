@@ -1,13 +1,15 @@
 {
-  "hooks": [
-    {
-      "type": "prompt",
-      "event": "PreToolUse",
-      "matcher": {
-        "tool": "Bash",
-        "command_pattern": "git commit"
-      },
-      "prompt": "Before this git commit executes, validate APDS configuration:\n\n1. **Check for sensitive files** being committed:\n   - `vapid.json` - Contains private VAPID keys (BLOCK if staged)\n   - `subscriptions.json` - Contains push subscription data (BLOCK if staged)\n   - `*.keypair` - Keypair files (BLOCK if staged)\n\n2. **Validate JSON files** in staged changes:\n   - Check `db.json` and `deno.json` for valid JSON syntax\n\n3. **Check JavaScript files** for common issues:\n   - Missing `await` on APDS async functions (apds.compose, apds.sign, apds.get, apds.put, apds.query, apds.generate, apds.pubkey, apds.keypair, apds.open, apds.add, apds.make)\n   - Hardcoded WebSocket URLs (should use variables)\n   - Exposed keypairs (88-character base64 strings)\n\n**Actions:**\n- Run `git diff --cached --name-only` to see staged files\n- If sensitive files found: BLOCK commit and explain\n- If hardcoded keypairs found: BLOCK commit and explain\n- If other issues found: WARN but allow commit\n- If clean: Allow commit silently"
-    }
-  ]
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Before this bash command executes, if it's a git commit, validate APDS configuration:\n\n1. Check for sensitive files being committed:\n   - `vapid.json` - Contains private VAPID keys (BLOCK if staged)\n   - `subscriptions.json` - Contains push subscription data (BLOCK if staged)\n   - `*.keypair` - Keypair files (BLOCK if staged)\n\n2. Validate JSON files in staged changes:\n   - Check `db.json` and `deno.json` for valid JSON syntax\n\n3. Check JavaScript files for common issues:\n   - Missing `await` on APDS async functions\n   - Hardcoded WebSocket URLs\n   - Exposed keypairs (88-character base64 strings)\n\nActions:\n- If sensitive files found: BLOCK commit and explain\n- If hardcoded keypairs found: BLOCK commit and explain\n- If other issues found: WARN but allow commit\n- If clean: Allow commit silently"
+          }
+        ]
+      }
+    ]
+  }
 }

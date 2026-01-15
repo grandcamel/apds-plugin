@@ -1,9 +1,11 @@
 {
-  "$schema": "https://claude.ai/plugin-schema.json",
   "name": "apds-dev",
   "version": "1.0.1",
   "description": "Claude Code plugin to support developers building with APDS (ANProto Personal Data Server)",
-  "author": "Jason Krueger",
+  "author": {
+    "name": "Jason Krueger",
+    "email": "jason@example.com"
+  },
   "license": "MIT",
   "repository": "https://github.com/grandcamel/apds-plugin",
   "keywords": [
@@ -15,14 +17,8 @@
     "personal-data-server",
     "deno"
   ],
-  "agents": [
-    "agents/*.md"
-  ],
-  "skills": [
-    "skills/*/SKILL.md"
-  ],
-  "commands": [
-    "commands/*.md"
-  ],
-  "hooks": "hooks/hooks.json"
+  "agents": "./agents",
+  "skills": "./skills",
+  "commands": "./commands",
+  "hooks": "./hooks/hooks.json"
 }
