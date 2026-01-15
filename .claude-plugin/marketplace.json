@@ -1,18 +1,18 @@
 {
-  "$schema": "https://claude.ai/marketplace-schema.json",
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "apds-plugin-marketplace",
+  "version": "1.0.0",
   "description": "APDS Developer Plugin for Claude Code",
   "owner": {
     "name": "Jason Krueger",
-    "github": "grandcamel"
+    "email": "jason@example.com"
   },
   "plugins": [
     {
       "name": "apds-dev",
-      "source": {
-        "type": "local",
-        "path": "."
-      }
+      "description": "Claude Code plugin to support developers building with APDS (ANProto Personal Data Server)",
+      "source": ".",
+      "category": "development"
     }
   ]
 }
