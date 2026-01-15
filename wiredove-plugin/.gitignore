@@ -1,8 +1,0 @@
-# Cloned wiredove source for analysis (not part of plugin)
-wiredove-src/
-
-# Local settings
-.claude/*.local.md
-
-# OS files
-.DS_Store
