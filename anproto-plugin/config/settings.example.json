@@ -1,0 +1,65 @@
+{
+  "$schema": "./settings.schema.json",
+  "version": "1.0.0",
+  "description": "ANProto plugin configuration example",
+
+  "profiles": {
+    "development": {
+      "description": "Development environment settings",
+      "keypair": {
+        "source": "env",
+        "envVar": "ANPROTO_DEV_KEYPAIR"
+      },
+      "storage": {
+        "type": "localStorage",
+        "prefix": "anproto_dev_"
+      },
+      "validation": {
+        "maxMessageAge": 86400000,
+        "allowFutureTimestamp": 300000
+      }
+    },
+    "production": {
+      "description": "Production environment settings",
+      "keypair": {
+        "source": "env",
+        "envVar": "ANPROTO_KEYPAIR"
+      },
+      "storage": {
+        "type": "database",
+        "connectionEnvVar": "DATABASE_URL"
+      },
+      "validation": {
+        "maxMessageAge": 3600000,
+        "allowFutureTimestamp": 60000
+      }
+    },
+    "testing": {
+      "description": "Test environment with deterministic keys",
+      "keypair": {
+        "source": "seed",
+        "seed": "test-seed-do-not-use-in-production"
+      },
+      "storage": {
+        "type": "memory"
+      },
+      "validation": {
+        "maxMessageAge": null,
+        "allowFutureTimestamp": null
+      }
+    }
+  },
+
+  "defaults": {
+    "profile": "development",
+    "runtime": "auto",
+    "hashAlgorithm": "SHA-256",
+    "encoding": "base64"
+  },
+
+  "security": {
+    "warnOnExposedKeys": true,
+    "requireGitignore": true,
+    "allowPlaintextStorage": false
+  }
+}
