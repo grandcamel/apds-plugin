@@ -37,6 +37,15 @@ APDS is a Deno-based personal data server for ANProto, a decentralized social pr
 | Command | Description |
 |---------|-------------|
 | `/apds-run` | Start APDS server, CLI, or relay with correct Deno permissions |
+| `/apds-init` | Scaffold new APDS project (server, client, relay, or fullstack) |
+| `/apds-test` | Test APDS functionality (push, server, signing, sync) |
+| `/apds-peers` | Manage peer connections (list, add, remove, test, discover) |
+
+### Hooks
+
+| Hook | Description |
+|------|-------------|
+| `validate-apds-config` | Pre-commit validation for config files, sensitive data, and code quality |
 
 ## Installation
 
@@ -125,7 +134,7 @@ WS   /            - Real-time sync
 
 ## Development Status
 
-**Current Version**: 0.3.0
+**Current Version**: 0.4.0
 
 See [PLAN.md](./PLAN.md) for the full development roadmap.
 

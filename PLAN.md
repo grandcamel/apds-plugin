@@ -31,14 +31,14 @@ Create a Claude Code plugin that accelerates development with APDS (ANProto Pers
 - [x] `apds-troubleshooter` agent - Automated issue diagnosis
 - [x] `apds-architect` agent - Help design APDS-based applications
 
+### Phase 5: Commands & Hooks ✓
+
+- [x] `/apds-init` command - Scaffold new APDS project
+- [x] `/apds-test` command - Test push notifications
+- [x] `/apds-peers` command - Manage peer connections
+- [x] Pre-commit hook for message format validation
+
 ## In Progress
-
-### Phase 5: Commands & Hooks
-
-- [ ] `/apds-init` command - Scaffold new APDS project
-- [ ] `/apds-test` command - Test push notifications
-- [ ] `/apds-peers` command - Manage peer connections
-- [ ] Pre-commit hook for message format validation
 
 ### Phase 6: Integration & Polish
 
@@ -69,6 +69,12 @@ Create a Claude Code plugin that accelerates development with APDS (ANProto Pers
 - Research Notes: `.research/apds-overview.md`
 
 ## Changelog
+
+### v0.4.0 (2026-01-15)
+- New commands: /apds-init, /apds-test, /apds-peers
+- Pre-commit hook for config and code validation
+- Project scaffolding with multiple templates
+- Comprehensive peer management tooling
 
 ### v0.3.0 (2026-01-15)
 - New agents: apds-troubleshooter, apds-architect
