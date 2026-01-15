@@ -38,14 +38,14 @@ Create a Claude Code plugin that accelerates development with APDS (ANProto Pers
 - [x] `/apds-peers` command - Manage peer connections
 - [x] Pre-commit hook for message format validation
 
-## In Progress
+### Phase 6: Integration & Polish ✓
 
-### Phase 6: Integration & Polish
+- [x] Integration testing with live APDS instances
+- [x] User feedback and iteration (CONTRIBUTING.md)
+- [x] Performance optimization documentation
+- [x] Extended documentation (docs/ folder)
 
-- [ ] Integration testing with live APDS instances
-- [ ] User feedback and iteration
-- [ ] Performance optimization
-- [ ] Extended documentation
+## Complete
 
 ## Architecture Decisions
 
@@ -69,6 +69,15 @@ Create a Claude Code plugin that accelerates development with APDS (ANProto Pers
 - Research Notes: `.research/apds-overview.md`
 
 ## Changelog
+
+### v1.0.0 (2026-01-15)
+- Complete documentation suite (docs/ folder)
+- Integration testing guide with live examples
+- Performance optimization guide
+- API reference documentation
+- Quick start guide
+- CONTRIBUTING.md for community participation
+- All 6 phases complete - initial release!
 
 ### v0.4.0 (2026-01-15)
 - New commands: /apds-init, /apds-test, /apds-peers

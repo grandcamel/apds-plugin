@@ -78,22 +78,27 @@ claude plugins add /path/to/apds-plugin
 ### Exploring Code
 The `apds-explorer` agent is automatically triggered when exploring APDS codebases.
 
+## Documentation
+
+Extended documentation is available in the `docs/` folder:
+
+- **[Quick Start](docs/quickstart.md)** - Get running in 5 minutes
+- **[API Reference](docs/api-reference.md)** - Complete APDS API documentation
+- **[Integration Testing](docs/integration-testing.md)** - Test against live servers
+- **[Performance Guide](docs/performance.md)** - Optimization tips and benchmarks
+
 ## Project Structure
 
 ```
 apds-plugin/
 ├── plugin.json           # Plugin manifest
-├── agents/
-│   └── apds-explorer.md  # Codebase exploration agent
-├── skills/
-│   ├── apds-setup.md     # Setup guide skill
-│   └── apds-debug.md     # Debugging skill
-├── commands/
-│   └── apds-run.md       # Run command
-├── hooks/                # (future)
-├── .research/
-│   ├── apds-overview.md  # Architecture documentation
-│   └── apds-repo/        # Cloned APDS source (gitignored)
+├── agents/               # 3 specialized agents
+├── skills/               # 5 guided workflows
+├── commands/             # 4 quick commands
+├── hooks/                # Validation hooks
+├── docs/                 # Extended documentation
+├── .research/            # Architecture notes
+├── CONTRIBUTING.md       # Contribution guidelines
 ├── PLAN.md               # Development roadmap
 └── README.md             # This file
 ```
@@ -134,7 +139,7 @@ WS   /            - Real-time sync
 
 ## Development Status
 
-**Current Version**: 0.4.0
+**Current Version**: 1.0.0
 
 See [PLAN.md](./PLAN.md) for the full development roadmap.
 
