@@ -1,0 +1,11 @@
+{
+  "$schema": "https://claude.ai/marketplace-schema.json",
+  "name": "apds-plugin-marketplace",
+  "description": "APDS Developer Plugin for Claude Code",
+  "plugins": [
+    {
+      "id": "apds-dev",
+      "path": ".."
+    }
+  ]
+}
