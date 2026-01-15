@@ -1,5 +1,9 @@
 # ANProto Claude Code Plugin
 
+![Version](https://img.shields.io/badge/version-1.1.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Claude Code](https://img.shields.io/badge/Claude%20Code-Plugin-purple)
+
 A Claude Code plugin to assist developers working with [ANProto](https://github.com/evbogue/anproto) - a lightweight decentralized authentication and messaging protocol using ed25519 keypairs.
 
 ## Installation
@@ -133,8 +137,14 @@ anproto-plugin/
 ├── config/                  # Configuration examples
 │   ├── settings.example.json
 │   └── .env.example
+├── templates/               # Project starter templates
+│   ├── browser/
+│   ├── deno/
+│   └── node/
+├── CHANGELOG.md             # Version history
 ├── CLAUDE.md                # Claude Code guidance
 ├── CONTRIBUTING.md          # Contribution guidelines
+├── LICENSE                  # MIT license
 ├── SECURITY.md              # Security policy
 ├── RESEARCH.md              # Deep research notes
 └── PLAN.md                  # Implementation plan

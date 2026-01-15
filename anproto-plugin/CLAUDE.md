@@ -32,8 +32,14 @@ anproto-plugin/
 ├── config/                  # Configuration examples
 │   ├── settings.example.json
 │   └── .env.example
+├── templates/               # Project starter templates
+│   ├── browser/
+│   ├── deno/
+│   └── node/
 ├── anproto/                 # Cloned ANProto source (reference only, gitignored)
+├── CHANGELOG.md             # Version history
 ├── CONTRIBUTING.md          # Contribution guidelines
+├── LICENSE                  # MIT license
 ├── SECURITY.md              # Security policy
 ├── RESEARCH.md              # Deep technical analysis
 └── PLAN.md                  # Implementation plan
@@ -48,7 +54,7 @@ Skills are context-loading documents with enhanced frontmatter:
 - `version`: Semantic version (1.1.0)
 - `author`: Author name
 - `license`: MIT
-- `allowed-tools`: Optional tool whitelist
+- `tools`: Optional tool whitelist (for agents)
 
 ### Commands
 Slash commands with metadata:
