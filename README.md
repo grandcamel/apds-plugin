@@ -20,6 +20,9 @@ APDS is a Deno-based personal data server for ANProto, a decentralized social pr
 |-------|-------------|
 | `apds-setup` | Guided setup for server, CLI, relay, or browser client |
 | `apds-debug` | Troubleshoot connection, sync, keypair, and storage issues |
+| `apds-message` | Compose messages with YAML frontmatter and understand message format |
+| `apds-connect` | Manage peer connections, WebSocket sync, and gossip protocol |
+| `apds-push` | Set up Web Push notifications with VAPID and service workers |
 
 ### Agents
 
@@ -120,7 +123,7 @@ WS   /            - Real-time sync
 
 ## Development Status
 
-**Current Version**: 0.1.0
+**Current Version**: 0.2.0
 
 See [PLAN.md](./PLAN.md) for the full development roadmap.
 

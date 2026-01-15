@@ -20,13 +20,13 @@ Create a Claude Code plugin that accelerates development with APDS (ANProto Pers
 - [x] `apds-explorer` agent - Codebase exploration
 - [x] `/apds-run` command - Quick start with correct permissions
 
+### Phase 3: Enhanced Skills ✓
+
+- [x] `apds-message` skill - Message composition and YAML formatting
+- [x] `apds-connect` skill - Peer discovery and management
+- [x] `apds-push` skill - Web Push notification setup
+
 ## In Progress
-
-### Phase 3: Enhanced Skills
-
-- [ ] `apds-message` skill - Message composition and YAML formatting
-- [ ] `apds-connect` skill - Peer discovery and management
-- [ ] `apds-push` skill - Web Push notification setup
 
 ### Phase 4: Additional Agents
 
@@ -71,6 +71,12 @@ Create a Claude Code plugin that accelerates development with APDS (ANProto Pers
 - Research Notes: `.research/apds-overview.md`
 
 ## Changelog
+
+### v0.2.0 (2026-01-15)
+- Enhanced skills: apds-message, apds-connect, apds-push
+- Complete message composition and YAML formatting guide
+- Peer connection management and gossip protocol documentation
+- Web Push notification setup with service worker examples
 
 ### v0.1.0 (2026-01-15)
 - Initial plugin structure

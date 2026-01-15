@@ -1,7 +1,7 @@
 {
   "$schema": "https://claude.ai/plugin-schema.json",
   "name": "apds-dev",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Claude Code plugin to support developers building with APDS (ANProto Personal Data Server)",
   "author": "Jason Krueger",
   "license": "MIT",
