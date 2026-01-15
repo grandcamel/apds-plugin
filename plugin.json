@@ -16,9 +16,5 @@
     "web-push",
     "personal-data-server",
     "deno"
-  ],
-  "agents": "./agents",
-  "skills": "./skills",
-  "commands": "./commands",
-  "hooks": "./hooks/hooks.json"
+  ]
 }
