@@ -9,7 +9,10 @@
   "plugins": [
     {
       "name": "apds-dev",
-      "source": "."
+      "source": {
+        "type": "local",
+        "path": "."
+      }
     }
   ]
 }
