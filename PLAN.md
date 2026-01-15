@@ -26,14 +26,12 @@ Create a Claude Code plugin that accelerates development with APDS (ANProto Pers
 - [x] `apds-connect` skill - Peer discovery and management
 - [x] `apds-push` skill - Web Push notification setup
 
+### Phase 4: Additional Agents ✓
+
+- [x] `apds-troubleshooter` agent - Automated issue diagnosis
+- [x] `apds-architect` agent - Help design APDS-based applications
+
 ## In Progress
-
-### Phase 4: Additional Agents
-
-- [ ] `apds-troubleshooter` agent - Automated issue diagnosis
-- [ ] `apds-architect` agent - Help design APDS-based applications
-
-## Planned
 
 ### Phase 5: Commands & Hooks
 
@@ -71,6 +69,11 @@ Create a Claude Code plugin that accelerates development with APDS (ANProto Pers
 - Research Notes: `.research/apds-overview.md`
 
 ## Changelog
+
+### v0.3.0 (2026-01-15)
+- New agents: apds-troubleshooter, apds-architect
+- Systematic diagnostic workflows for common issues
+- Application design patterns and architecture guidance
 
 ### v0.2.0 (2026-01-15)
 - Enhanced skills: apds-message, apds-connect, apds-push

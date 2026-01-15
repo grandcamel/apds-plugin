@@ -29,6 +29,8 @@ APDS is a Deno-based personal data server for ANProto, a decentralized social pr
 | Agent | Description |
 |-------|-------------|
 | `apds-explorer` | Explore APDS codebases, trace message flows, understand architecture |
+| `apds-troubleshooter` | Systematically diagnose issues with servers, connections, and sync |
+| `apds-architect` | Design APDS applications - data models, topologies, integration patterns |
 
 ### Commands
 
@@ -123,7 +125,7 @@ WS   /            - Real-time sync
 
 ## Development Status
 
-**Current Version**: 0.2.0
+**Current Version**: 0.3.0
 
 See [PLAN.md](./PLAN.md) for the full development roadmap.
 
