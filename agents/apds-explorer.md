@@ -1,12 +1,21 @@
 ---
-description: Explore and explain APDS codebases - trace message flows, understand the P2P architecture, and navigate the ANProto protocol implementation
+name: apds-explorer
+description: |
+  Explore and explain APDS codebases - trace message flows, understand the P2P architecture, and navigate the ANProto protocol implementation.
+
+  <example>
+  User asks "How does the gossip protocol work in APDS?" or "Trace how messages flow through the system"
+  </example>
+  <example>
+  User asks "What files handle WebSocket connections?" or "Explain the apds.js API"
+  </example>
 tools:
   - Glob
   - Grep
   - Read
-  - LS
   - Bash
 model: sonnet
+color: cyan
 ---
 
 # APDS Codebase Explorer

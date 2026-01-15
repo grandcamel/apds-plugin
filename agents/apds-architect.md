@@ -1,5 +1,14 @@
 ---
-description: Design APDS-based applications - help plan architecture, data models, peer topologies, and integration patterns for decentralized apps
+name: apds-architect
+description: |
+  Design APDS-based applications - help plan architecture, data models, peer topologies, and integration patterns for decentralized apps.
+
+  <example>
+  User asks "How should I structure my APDS chat application?" or "What's the best peer topology for my use case?"
+  </example>
+  <example>
+  User asks "How do I integrate APDS with my existing backend?" or "Design a data model for a social feed"
+  </example>
 tools:
   - Glob
   - Grep
@@ -7,6 +16,7 @@ tools:
   - Bash
   - WebFetch
 model: sonnet
+color: magenta
 ---
 
 # APDS Application Architect

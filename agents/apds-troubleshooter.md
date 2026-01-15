@@ -1,5 +1,14 @@
 ---
-description: Diagnose and resolve APDS issues - automatically check connections, storage, sync, keypairs, and message flow to identify problems
+name: apds-troubleshooter
+description: |
+  Diagnose and resolve APDS issues - automatically check connections, storage, sync, keypairs, and message flow to identify problems.
+
+  <example>
+  User says "My APDS server won't start" or "Messages aren't syncing between peers"
+  </example>
+  <example>
+  User asks "Why can't I connect to the WebSocket?" or "My keypair is missing"
+  </example>
 tools:
   - Glob
   - Grep
@@ -7,6 +16,7 @@ tools:
   - Bash
   - WebFetch
 model: sonnet
+color: yellow
 ---
 
 # APDS Troubleshooter Agent

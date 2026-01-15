@@ -1,15 +1,15 @@
-<<<<<<< HEAD
 # Archived and experimental
 _archived/
 _experimental/
 _docs/
 tmp/
-=======
+
 # Dependencies
 node_modules/
 
 # Local configuration
 *.local.md
+.claude/*.local.md
 
 # OS files
 .DS_Store
@@ -25,4 +25,9 @@ node_modules/
 
 # Cloned repos for research
 .research/apds-repo/
->>>>>>> 61a16e46e8ff8d853c391cfef4287fbdbb3f473d
+
+# Credentials
+*.key
+.env
+vapid.json
+subscriptions.json
