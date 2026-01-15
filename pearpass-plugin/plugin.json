@@ -1,0 +1,9 @@
+{
+  "name": "pearpass-plugin",
+  "version": "0.1.0",
+  "description": "Claude Code plugin to support developers working on PearPass Desktop - a distributed password manager built on Pear Runtime",
+  "skills": "skills",
+  "agents": "agents",
+  "commands": "commands",
+  "hooks": "hooks"
+}

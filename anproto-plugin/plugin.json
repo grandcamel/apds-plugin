@@ -1,0 +1,25 @@
+{
+  "name": "anproto-plugin",
+  "version": "1.0.0",
+  "description": "Claude Code plugin for ANProto - the Authenticated and Non-networked Protocol. Helps developers with ed25519 keypair management, message signing/verification, project setup, and debugging for JavaScript, Go, Rust, and Python implementations.",
+  "author": {
+    "name": "grandcamel"
+  },
+  "repository": "https://github.com/evbogue/anproto",
+  "skills": [
+    "./skills/anproto-explain.md",
+    "./skills/anproto-setup.md",
+    "./skills/anproto-debug.md",
+    "./skills/anproto-keygen.md",
+    "./skills/anproto-sign.md",
+    "./skills/anproto-verify.md"
+  ],
+  "commands": [
+    "./commands/anproto-init.md",
+    "./commands/anproto-parse.md"
+  ],
+  "agents": [
+    "./agents/anproto-explorer.md",
+    "./agents/anproto-reviewer.md"
+  ]
+}
