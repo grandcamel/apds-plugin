@@ -2,10 +2,14 @@
   "$schema": "https://claude.ai/marketplace-schema.json",
   "name": "apds-plugin-marketplace",
   "description": "APDS Developer Plugin for Claude Code",
+  "owner": {
+    "name": "Jason Krueger",
+    "github": "grandcamel"
+  },
   "plugins": [
     {
-      "id": "apds-dev",
-      "path": ".."
+      "name": "apds-dev",
+      "source": "."
     }
   ]
 }
