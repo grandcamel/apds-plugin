@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Local configuration
+*.local.md
+
+# OS files
+.DS_Store
+
+# Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Cloned repos for research
+.research/apds-repo/

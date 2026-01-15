@@ -1,0 +1,80 @@
+# APDS Plugin Development Plan
+
+## Vision
+
+Create a Claude Code plugin that accelerates development with APDS (ANProto Personal Data Server) by providing specialized skills, agents, and commands for the decentralized social protocol ecosystem.
+
+## Completed
+
+### Phase 1: Research & Foundation ✓
+
+- [x] Clone and analyze APDS codebase
+- [x] Document architecture and APIs
+- [x] Identify developer workflows and pain points
+- [x] Create plugin structure
+
+### Phase 2: Initial Implementation ✓
+
+- [x] `apds-setup` skill - Guided setup for all deployment modes
+- [x] `apds-debug` skill - Troubleshooting common issues
+- [x] `apds-explorer` agent - Codebase exploration
+- [x] `/apds-run` command - Quick start with correct permissions
+
+## In Progress
+
+### Phase 3: Enhanced Skills
+
+- [ ] `apds-message` skill - Message composition and YAML formatting
+- [ ] `apds-connect` skill - Peer discovery and management
+- [ ] `apds-push` skill - Web Push notification setup
+
+### Phase 4: Additional Agents
+
+- [ ] `apds-troubleshooter` agent - Automated issue diagnosis
+- [ ] `apds-architect` agent - Help design APDS-based applications
+
+## Planned
+
+### Phase 5: Commands & Hooks
+
+- [ ] `/apds-init` command - Scaffold new APDS project
+- [ ] `/apds-test` command - Test push notifications
+- [ ] `/apds-peers` command - Manage peer connections
+- [ ] Pre-commit hook for message format validation
+
+### Phase 6: Integration & Polish
+
+- [ ] Integration testing with live APDS instances
+- [ ] User feedback and iteration
+- [ ] Performance optimization
+- [ ] Extended documentation
+
+## Architecture Decisions
+
+### Why These Components?
+
+1. **Skills over commands** for guided workflows - setup and debug require context and interaction
+2. **Explorer agent** for deep codebase understanding - APDS has non-obvious message flow patterns
+3. **Simple commands** for quick actions - running servers doesn't need conversation
+
+### Key Insights from Research
+
+1. **Deno-first** - All tooling must understand Deno permissions and module system
+2. **Namespace isolation** - Storage namespaces are a common confusion point
+3. **P2P complexity** - Gossip and sync behavior needs clear explanation
+4. **YAML frontmatter** - Message format is specific and easy to get wrong
+
+## Resources
+
+- APDS Repository: https://github.com/evbogue/apds
+- Live Instance: https://apds.anproto.com
+- Research Notes: `.research/apds-overview.md`
+
+## Changelog
+
+### v0.1.0 (2026-01-15)
+- Initial plugin structure
+- Core skills: apds-setup, apds-debug
+- Explorer agent
+- Run command
+- Comprehensive research documentation
