@@ -10,12 +10,12 @@ This is a Claude Code plugin (`apds-dev`) that helps developers build applicatio
 
 Claude Code plugins use markdown files with YAML frontmatter to define components:
 
-- **Skills** (`skills/*.md`) - Guided workflows with `description` and `user_invocable` frontmatter
-- **Agents** (`agents/*.md`) - Autonomous helpers with `description`, `tools`, and `model` frontmatter
+- **Skills** (`skills/<name>/SKILL.md`) - Guided workflows with `description` and `user_invocable` frontmatter
+- **Agents** (`agents/*.md`) - Autonomous helpers with `name`, `description`, `tools`, `model`, and `color` frontmatter
 - **Commands** (`commands/*.md`) - Quick actions with `description`, `arguments`, and `user_invocable` frontmatter
-- **Hooks** (`hooks/*.md`) - Event triggers with `event`, `match_tools`, and `match_commands` frontmatter
+- **Hooks** (`hooks/hooks.json`) - Event triggers in JSON format with matcher and prompt fields
 
-The `plugin.json` manifest uses glob patterns to auto-discover components.
+The `.claude-plugin/plugin.json` manifest defines plugin metadata; components are auto-discovered from standard directories.
 
 ## Component Conventions
 

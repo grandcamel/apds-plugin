@@ -50,8 +50,11 @@ APDS is a Deno-based personal data server for ANProto, a decentralized social pr
 ## Installation
 
 ```bash
-# From your Claude Code settings, add the plugin
-claude plugins add /path/to/apds-plugin
+# Symlink the plugin to your Claude plugins directory
+ln -s /path/to/apds-plugin ~/.claude/plugins/apds-plugin
+
+# Or specify when running Claude Code
+claude --plugin-dir /path/to/apds-plugin
 ```
 
 ## Usage Examples
@@ -91,11 +94,13 @@ Extended documentation is available in the `docs/` folder:
 
 ```
 apds-plugin/
-├── plugin.json           # Plugin manifest
+├── .claude-plugin/
+│   └── plugin.json       # Plugin manifest
 ├── agents/               # 3 specialized agents
-├── skills/               # 5 guided workflows
+├── skills/               # 5 guided workflows (each in SKILL.md)
 ├── commands/             # 4 quick commands
-├── hooks/                # Validation hooks
+├── hooks/
+│   └── hooks.json        # Validation hooks
 ├── docs/                 # Extended documentation
 ├── .research/            # Architecture notes
 ├── CONTRIBUTING.md       # Contribution guidelines
@@ -139,7 +144,7 @@ WS   /            - Real-time sync
 
 ## Development Status
 
-**Current Version**: 1.0.0
+**Current Version**: 1.1.0
 
 See [PLAN.md](./PLAN.md) for the full development roadmap.
 
